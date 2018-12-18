@@ -14,6 +14,7 @@ library(MASS)
 library(survey)
 survey <- missForest(survey)
 surveyforest<-survey$ximp
-diag(cor(iris[, -5], surveyforest[,-5]))
+diag(cor(survey[, -5], surveyforest[,-5]))
 
 #2. Napisz poprawn?? p??tl?? for(lub zastosuj inn?? iteracj??) z ??wiczenia 9, kt??ra usunie punkty oddalone z wybranej zmiennej w zbiorze danych.
+
